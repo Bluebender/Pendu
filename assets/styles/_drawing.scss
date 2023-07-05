@@ -2,5 +2,13 @@
     background-color: #9fbbd3;
     height: 40vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+canvas{
+
+    border: 1px solid black;
 }
