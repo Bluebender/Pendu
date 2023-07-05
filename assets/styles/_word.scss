@@ -2,5 +2,19 @@
     background-color: #1c5b92;
     height: 20vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+        > p{
+            border: 1px solid #9fbbd3;
+            padding: 1vh 2vw;
+            color: white;
+        }
 
+    }
 }
