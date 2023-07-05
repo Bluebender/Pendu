@@ -1,0 +1,49 @@
+#keyboard{
+    background-color: #9fbbd3;
+    height: 20vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 4%;
+    // justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+    > section{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        column-gap: 2%;
+        width: 95%;
+        margin: auto;
+        height: 80%;
+        align-items: center;
+
+        &:nth-of-type(1){
+        }
+        &:nth-of-type(2){
+        }
+        &:nth-of-type(3){
+            > p:nth-of-type(1){
+                grid-column: 2/3;
+            }
+        }
+        &:nth-of-type(4){
+            > p:nth-of-type(1){
+                grid-column: 1/4;
+            }
+            > p:nth-of-type(2){
+                grid-column: 4/8;
+            }
+            > p:nth-of-type(3){
+                grid-column: 8/11;
+            }
+        }
+        > p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #1c5b92;
+            border-radius: 10px;
+            height: 100%;
+        }
+    }
+}

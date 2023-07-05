@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background-color: #1c5b92;
+  height: 10vh;
+  width: 100vw;
+}
+
+#drawing {
+  background-color: #9fbbd3;
+  height: 30vh;
+  width: 100vw;
+}
+
+#word {
+  background-color: #1c5b92;
+  height: 20vh;
+  width: 100vw;
+}
+
+#keyboard {
+  background-color: #9fbbd3;
+  height: 20vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 4%;
+  align-items: center;
+  padding: 2% 0;
+}
+#keyboard > section {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+  width: 95%;
+  margin: auto;
+  height: 80%;
+  align-items: center;
+}
+#keyboard > section:nth-of-type(3) > p:nth-of-type(1) {
+  grid-column: 2/3;
+}
+#keyboard > section:nth-of-type(4) > p:nth-of-type(1) {
+  grid-column: 1/4;
+}
+#keyboard > section:nth-of-type(4) > p:nth-of-type(2) {
+  grid-column: 4/8;
+}
+#keyboard > section:nth-of-type(4) > p:nth-of-type(3) {
+  grid-column: 8/11;
+}
+#keyboard > section > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1c5b92;
+  border-radius: 10px;
+  height: 100%;
+}
+
+footer {
+  background-color: #1c5b92;
+  height: 10vh;
+  width: 100vw;
+}/*# sourceMappingURL=styles.css.map */
