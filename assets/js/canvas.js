@@ -1,8 +1,8 @@
-function canvas(){
+export function canvas(){
+    // console.log("Je rentre dans canvas.js");
+
     let canvas = document.querySelector("canvas");
-    console.log(canvas)
     let ctx = canvas.getContext("2d");
-    console.log(ctx);
 
     ctx.fillStyle = "#000000";
 
@@ -36,5 +36,3 @@ function canvas(){
     ctx.fillRect(225, 205, 10, 50);
 
 }
-
-export { canvas };

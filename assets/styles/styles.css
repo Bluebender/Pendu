@@ -96,11 +96,21 @@ canvas {
   justify-content: space-around;
   width: 90%;
 }
-#word > section > p {
+#word > section > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #9fbbd3;
+  width: 100%;
+}
+#word > section > section > p {
   padding: 1vh 2vw;
   color: white;
   font-weight: bold;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 #keyboard {
