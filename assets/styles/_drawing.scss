@@ -14,10 +14,10 @@
         font-size: 2rem;
         font-weight: bold;
         &:first-of-type{
-            color: red;
+            color: rgb(206, 3, 3);
         }
         &:last-of-type{
-            color: green;
+            color: rgb(239, 243, 0);
         }
         &.hidden{
             display: none;

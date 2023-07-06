@@ -61,8 +61,10 @@ header {
   align-items: center;
 }
 header > button {
-  background-color: rgb(0, 202, 143);
+  background-color: rgb(0, 109, 77);
   border: none;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   padding: 1vh 4vw;
@@ -84,10 +86,10 @@ header > button {
   font-weight: bold;
 }
 #drawing > p:first-of-type {
-  color: red;
+  color: rgb(206, 3, 3);
 }
 #drawing > p:last-of-type {
-  color: green;
+  color: rgb(239, 243, 0);
 }
 #drawing > p.hidden {
   display: none;
@@ -160,13 +162,12 @@ header > button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #1c5b92;
   border-radius: 10px;
   height: 100%;
   box-shadow: 1px 1px 2px rgb(0, 109, 77);
 }
 #keyboard > section > p.green {
-  background-color: green;
+  background-color: rgb(0, 109, 77);
 }
 #keyboard > section > p.red {
   background-color: red;
