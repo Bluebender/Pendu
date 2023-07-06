@@ -1,12 +1,12 @@
 header{
-    background-color: #1c5b92;
+    background: $color1;
     height: 10vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     > button{
-        background-color: #9fbbd3;
+        background-color: rgba(0,202,143,1);
         border: none;
         border-radius: 10px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);

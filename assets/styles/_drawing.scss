@@ -1,5 +1,5 @@
 #drawing{
-    background-color: #9fbbd3;
+    background: $color2;
     height: 50vh;
     width: 100vw;
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     > canvas{
-        border: 1px solid black;
+        // border: 1px solid black;
     }
     > p{
         margin-top: 2vh;

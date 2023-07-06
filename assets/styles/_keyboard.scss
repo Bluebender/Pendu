@@ -1,5 +1,5 @@
 #keyboard{
-    background-color: #9fbbd3;
+    background: $color4;
     height: 20vh;
     width: 100vw;
     display: grid;
@@ -44,6 +44,7 @@
             border: 1px solid #1c5b92;
             border-radius: 10px;
             height: 100%;
+            box-shadow: 1px 1px 2px rgba(0,109,77,1);
             &.green{
                 background-color: green;
             }
