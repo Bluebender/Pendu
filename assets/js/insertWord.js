@@ -1,6 +1,15 @@
 export function insertWord(wordToFind){
 
     let section = document.querySelector("#word > section");
+    let sectionsToDelete = document.querySelectorAll("#word > section > section");
+
+    if(sectionsToDelete){
+        for(let section of sectionsToDelete){
+            section.remove();
+        }
+
+    }
+
     for(let i = 0; i < wordToFind.length; i++){
 
         let newSection = document.createElement("section");

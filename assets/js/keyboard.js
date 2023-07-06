@@ -66,7 +66,7 @@ export function keyboard(wordToFind){
             // partie gagnante
             let hiddenLetters = document.querySelectorAll("#word > section > section > p.hidden");
             console.log(hiddenLetters.length);
-            if(hiddenLetters.length==0){
+            if(hiddenLetters.length==0 && compteur<7){
                 let win = document.getElementById("win");
                 win.classList.remove("hidden");
             }
