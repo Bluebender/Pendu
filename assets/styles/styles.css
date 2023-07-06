@@ -167,6 +167,12 @@ header > button {
   border-radius: 10px;
   height: 100%;
 }
+#keyboard > section > p.green {
+  background-color: green;
+}
+#keyboard > section > p.red {
+  background-color: red;
+}
 
 footer {
   background-color: #1c5b92;

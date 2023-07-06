@@ -31,6 +31,7 @@ export function keyboard(wordToFind){
                     // console.log(paragraphes[i]);
                     paragraphes[i].classList.remove("hidden");
                     reponse = true;
+                    key.classList.add("green");
                 }
             }
             
@@ -38,6 +39,7 @@ export function keyboard(wordToFind){
                 console.log("compteur avant l'ajout de 1 : "+compteur)
                 compteur = compteur + 1;
                 console.log("compteur d'erreur : "+compteur);
+                key.classList.add("red");
             }
 
             // Affichage des illustrations

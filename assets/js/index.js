@@ -18,6 +18,11 @@ window.addEventListener("DOMContentLoaded", function(){
         newCanvas.setAttribute("height", "250px");
         newCanvas.setAttribute("width", "300px");
         drawing.prepend(newCanvas);
+        let keys = document.querySelectorAll("#keyboard > section > p");
+        for(let key of keys){
+            key.classList.remove("green")
+            key.classList.remove("red")
+        }
 
         // Selection aléatoire d'un mot dans le tableau et découpage du mot
         let wordToFind = findWord(words);
