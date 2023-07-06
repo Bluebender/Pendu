@@ -71,7 +71,7 @@ header > button {
 
 #drawing {
   background-color: #9fbbd3;
-  height: 40vh;
+  height: 50vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -98,7 +98,7 @@ header > button {
 
 #word {
   background-color: #1c5b92;
-  height: 20vh;
+  height: 10vh;
   width: 100vw;
   display: flex;
   justify-content: center;
