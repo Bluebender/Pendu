@@ -1,5 +1,4 @@
 export function keyboard(wordToFind){
-    // console.log("Je rentre dans clavier.js");
 
     let newGame = document.getElementById("newGame");
     let sortie = false;
@@ -10,7 +9,6 @@ export function keyboard(wordToFind){
     let keys = document.querySelectorAll("#keyboard > section > p");
     let paragraphes = document.querySelectorAll("#word > section > section > p");
     let compteur = 0;
-    console.log("je réinitialise mon compteur d'erreur à : "+compteur)
 
     for(let key of keys){
         key.addEventListener("click", function(){
@@ -20,7 +18,6 @@ export function keyboard(wordToFind){
         
             // Lettre selectionnée
             let letter = key.textContent;
-            console.log("lettre selectionnée : "+letter);
 
             // Je réinitialise la réponse en false
             let reponse = false;
@@ -28,7 +25,6 @@ export function keyboard(wordToFind){
             for(let i=0; i<wordToFind.length;  i++){
 
                 if(letter === wordToFind[i]){
-                    // console.log(paragraphes[i]);
                     paragraphes[i].classList.remove("hidden");
                     reponse = true;
                     key.classList.add("green");
@@ -36,9 +32,7 @@ export function keyboard(wordToFind){
             }
             
             if(reponse === false){
-                console.log("compteur avant l'ajout de 1 : "+compteur)
                 compteur = compteur + 1;
-                console.log("compteur d'erreur : "+compteur);
                 key.classList.add("red");
             }
 
@@ -80,7 +74,6 @@ export function keyboard(wordToFind){
 
             // partie gagnante
             let hiddenLetters = document.querySelectorAll("#word > section > section > p.hidden");
-            console.log("nombre de lettres encore masquées : "+hiddenLetters.length);
             if(hiddenLetters.length==0 && compteur<7){
                 let win = document.getElementById("win");
                 win.classList.remove("hidden");

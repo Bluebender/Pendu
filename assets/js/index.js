@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
         // Selection aléatoire d'un mot dans le tableau et découpage du mot
         let wordToFind = findWord(words);
-        console.log(wordToFind);
+        // console.log(wordToFind);
 
         // Affichage du mot découpé dans le HTML
         insertWord(wordToFind);
