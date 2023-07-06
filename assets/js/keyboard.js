@@ -1,30 +1,43 @@
 export function keyboard(wordToFind){
     // console.log("Je rentre dans clavier.js");
 
+    let newGame = document.getElementById("newGame");
+    let sortie = false;
+    newGame.addEventListener("click", function(){
+        sortie = true;
+    });
+
     let keys = document.querySelectorAll("#keyboard > section > p");
     let paragraphes = document.querySelectorAll("#word > section > section > p");
     let compteur = 0;
+    console.log("je réinitialise mon compteur d'erreur à : "+compteur)
 
     for(let key of keys){
         key.addEventListener("click", function(){
-            // console.log(key.textContent);
+            if(sortie===true){
+                return;
+            }
+        
+            // Lettre selectionnée
             let letter = key.textContent;
-            console.log(letter);
+            console.log("lettre selectionnée : "+letter);
 
-            // console.log(paragraphes);
-            
+            // Je réinitialise la réponse en false
             let reponse = false;
+            // Pour toutes les lettres du mot à trouver
             for(let i=0; i<wordToFind.length;  i++){
-               
+
                 if(letter === wordToFind[i]){
                     // console.log(paragraphes[i]);
                     paragraphes[i].classList.remove("hidden");
                     reponse = true;
                 }
             }
+            
             if(reponse === false){
+                console.log("compteur avant l'ajout de 1 : "+compteur)
                 compteur = compteur + 1;
-                console.log(compteur);
+                console.log("compteur d'erreur : "+compteur);
             }
 
             // Affichage des illustrations
@@ -65,7 +78,7 @@ export function keyboard(wordToFind){
 
             // partie gagnante
             let hiddenLetters = document.querySelectorAll("#word > section > section > p.hidden");
-            console.log(hiddenLetters.length);
+            console.log("nombre de lettres encore masquées : "+hiddenLetters.length);
             if(hiddenLetters.length==0 && compteur<7){
                 let win = document.getElementById("win");
                 win.classList.remove("hidden");
@@ -73,9 +86,6 @@ export function keyboard(wordToFind){
 
         });
     }
-
-    return compteur;
-
 
 
 }

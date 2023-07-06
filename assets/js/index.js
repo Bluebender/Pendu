@@ -19,10 +19,6 @@ window.addEventListener("DOMContentLoaded", function(){
         newCanvas.setAttribute("width", "300px");
         drawing.prepend(newCanvas);
 
-
-
-
-
         // Selection aléatoire d'un mot dans le tableau et découpage du mot
         let wordToFind = findWord(words);
         console.log(wordToFind);
