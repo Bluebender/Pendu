@@ -74,12 +74,26 @@ header > button {
   height: 40vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-canvas {
+#drawing > canvas {
   border: 1px solid black;
+}
+#drawing > p {
+  margin-top: 2vh;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#drawing > p:first-of-type {
+  color: red;
+}
+#drawing > p:last-of-type {
+  color: green;
+}
+#drawing > p.hidden {
+  display: none;
 }
 
 #word {

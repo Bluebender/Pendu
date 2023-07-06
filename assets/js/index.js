@@ -3,7 +3,7 @@ import { findWord } from './findWord.js';
 import { insertWord } from './insertWord.js';
 import { keyboard } from './keyboard.js';
 
-import { canvas } from './canvas.js';
+// import { canvas } from './canvas.js';
 
 window.addEventListener("DOMContentLoaded", function(){  
     // console.log("Je suis dans l'index.js");
@@ -16,9 +16,8 @@ window.addEventListener("DOMContentLoaded", function(){
     insertWord(wordToFind);
 
     keyboard(wordToFind);
-
-
-    canvas();
+    
+    // canvas();
 
 
     // let letters = creatWord();

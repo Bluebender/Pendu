@@ -3,12 +3,26 @@
     height: 40vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    > canvas{
+        border: 1px solid black;
+    }
+    > p{
+        margin-top: 2vh;
+        font-size: 2rem;
+        font-weight: bold;
+        &:first-of-type{
+            color: red;
+        }
+        &:last-of-type{
+            color: green;
+        }
+        &.hidden{
+            display: none;
+        }
+    }
 
 }
 
-canvas{
-
-    border: 1px solid black;
-}
